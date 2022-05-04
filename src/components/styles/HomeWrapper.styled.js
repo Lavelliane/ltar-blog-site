@@ -26,7 +26,7 @@ const Wrapper = styled.div`
     grid-area: main;
   }
   .secondary-body {
-    background-color: yellowgreen;
+    
     grid-area: secondary;
   }
   .footer {
