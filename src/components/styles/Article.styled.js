@@ -13,6 +13,11 @@ export const Wrapper = styled.article`
     h4{
         font-family: "EB Garamond", serif;
     }
+    h5{
+        font-family: "Poppins", serif;
+        font-weight:600;
+    }
+    
     
     p{
         font-family:"Poppins", sans-serif;
@@ -32,8 +37,7 @@ export const Wrapper = styled.article`
     flex-wrap: wrap;
     justify-content: center;
     max-width: 1200px;
-    margin-block: 2rem;
-    gap: 2rem;
+ 
     }
 
     img {
@@ -46,14 +50,20 @@ export const Wrapper = styled.article`
 
     .card {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: clamp(20rem, calc(20rem + 2vw), 22rem);
     overflow: hidden;
-    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
-    border-radius: 1em;
-    background: #ECE9E6;
-    background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+    }
 
+    .card__left{
+        display:flex;
+        flex-direction:column;
+    }
+
+    .card__header{
+        display:flex;
+        justify-content:center;
+        align-items:center;
     }
 
 
@@ -65,11 +75,15 @@ export const Wrapper = styled.article`
     gap: .5rem;
     }
 
+    .card__image{
+
+        max-width:90%;
+        max-height:90%;
+    }
 
     .tag {
     align-self: flex-start;
     padding: .25em .75em;
-    border-radius: 1em;
     font-size: .75rem;
     }
 
@@ -77,23 +91,11 @@ export const Wrapper = styled.article`
     margin-left: .5em;
     }
 
-    .tag-blue {
-    background: #56CCF2;
-    background: linear-gradient(to bottom, #2F80ED, #56CCF2);
-    color: #fafafa;
+    .tag-black {
+    background: #000000;
+    color:#fafafa;
     }
 
-    .tag-brown {
-    background: #D1913C;
-    background: linear-gradient(to bottom, #FFD194, #D1913C);
-    color: #fafafa;
-    }
-
-    .tag-red {
-    background: #cb2d3e;
-    background: linear-gradient(to bottom, #ef473a, #cb2d3e);
-    color: #fafafa;
-    }
 
     .card__body h4 {
     font-size: 1.5rem;
@@ -102,7 +104,7 @@ export const Wrapper = styled.article`
 
     .card__footer {
     display: flex;
-    padding: 1rem;
+    padding-top: 1rem;
     margin-top: auto;
     }
 
@@ -112,7 +114,9 @@ export const Wrapper = styled.article`
     }
 
     .user__image {
-    border-radius: 50%;
+    border-radius:50%;
+    width: 40px;
+    height: 40px;
     }
 
     .user__info > small {

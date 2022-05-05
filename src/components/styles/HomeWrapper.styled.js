@@ -22,11 +22,12 @@ const Wrapper = styled.div`
     grid-area: featured;
   }
   .main-body {
-    background-color: blanchedalmond;
+    border-left:1px solid grey;
+    
     grid-area: main;
   }
   .secondary-body {
-    
+    border-left:1px solid grey;
     grid-area: secondary;
   }
   .footer {
