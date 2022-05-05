@@ -18,19 +18,15 @@ const Wrapper = styled.div`
     grid-area: act;
   }
   .featured {
-    background-color: bisque;
     grid-area: featured;
   }
   .main-body {
-    background-color: blanchedalmond;
     grid-area: main;
   }
   .secondary-body {
-    background-color: yellowgreen;
     grid-area: secondary;
   }
   .footer {
-    background-color: burlywood;
     grid-area: footer;
   }
 `;
